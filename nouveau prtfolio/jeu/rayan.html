@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Okalamar</title>
+        <style>
+            .leo{
+                background-color: green;
+                margin-bottom: 20px;
+                height: 20px;
+            }
+            .ob{
+                background-color: red 20px;
+            }   
+            .jaune{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pika Pika  </h1>
+        <div class="leo"> </div>
+    
+        <figure class="jaune">
+        <img class="ob"   src="https://c.tenor.com/2lFt6lp1KaMAAAAj/run-pokemon.gif">
+
+        </figure>
+        <div class="leo"> </div>
+        <button class="btn1"> Avance</button>
+        <button class="btn2">Reculer </button>
+
+        <script> 
+        var pika = document.querySelector('img');
+        var button = document.querySelectorAll('button');
+        var position=0;
+        button[0].addEventListener('click',function(){
+            position += 30;
+            pika.style.marginLeft= position + 'px';
+        });
+        button[1].addEventListener('click',function(){
+            position -= 30;
+            pika.style.marginLeft= position + 'px';
+        });
+
+        </script>
+    </body>
+</html>
